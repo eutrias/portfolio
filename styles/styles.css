@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: black;
+}
+
+h3 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.navbar img {
+    width: 48px;
+}
+
+.logo {
+    display: flex;
+    background-color: #ECFF00;
+    color: #0500FF;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.logo a {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: 32px;
+    text-decoration: none;
+    color: #0500FF;
+    transition: 0.5s;
+}
+
+.logo:hover {
+    background-color: #0500FF;
+}
+
+.logo:hover a {
+    color: #ECFF00;
+}
+
+.column-1 {
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    width: 20vw;
+    height: 100vh;
+}
+
+.column-1 h2 {
+    width: 685px;
+    margin-top: 36px;
+    margin-left: 56px;
+    line-height: 120%;
+}
+
+.column-1 h3 {
+    margin-left: 56px;
+    margin-top: 134px;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    margin-left: 56px;
+    margin-top: 24px;
+}
+
+.arrow-right {
+    width: 26px;
+    height: 26px;
+    background-color: #ECFF00;
+    /* padding: 5px; */
+}
+
+.about-me-link {
+    display: flex;
+    justify-content: center;
+}
+
+.about-me-link a {
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    color: #0500FF;
+    padding: 6px 10px;
+    transition: 0.3s;
+}
+
+.about-me-link a:hover {
+    background-color: #ECFF00;
+}
+
+.footer {
+    margin-top: 176px;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    height: 100%;
+}
+
+.fa-brands {
+    font-size: 24px;
+    margin-left: 36px;
+    margin-top: 16px;
+    transition: 0.3s;
+    display: block;
+    margin: 0 auto;
+}
+
+.fa-brands:hover {
+    transform: scale(1.5);
+}
+
+.fa-linkedin:hover {
+    color: #2A66BC;
+}
+
+.fa-medium:hover {
+    color: black;
+}
+
+.fa-square-dribbble:hover {
+    color: #D85988;
+}
+
+.footer-list li {
+    margin: 8px 52px 0 0;
+}
+
+.footer-list a {
+    color: #0500FF;
+}
+
+.column-2 {
+    background-color: #F5F5F5;
+    flex-grow: 1;
+    width: 80vw;
+    height: 100vh;
+    position: relative;
+}
+
+.column-2 h3 {
+    display: flex;
+    margin-top: 167px;
+    justify-content: end;
+    margin-right: 68px;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 36px;
+    margin-top: 34px;
+}
+
+.project-list a {
+    height: 67.8px;
+    margin-right: 68px;
+    padding: 24px 0;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 54px;
+    color: black;
+    position: relative;
+    z-index: 10;
+}
+
+.project-name::after {
+    content: '';
+    background-color: #F5F5F5;
+    height: 29px;
+    width: 360px;
+    margin-right: 96px;
+    margin-top: -18px;
+    transition: 0.5s;
+}
+
+.project-name:hover::after {
+    content: '';
+    background-color: #ECFF00;
+    height: 29px;
+    width: 360px;
+    margin-right: 96px;
+    margin-top: -18px;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+/* .yellow-rectangle {
+    display: block;
+    background-color: #F5F5F5;
+    height: 29px;
+    width: 360px;
+    margin-right: 96px;
+    margin-top: -18px;
+    transition: 0.5s;
+}
+
+.yellow-rectangle:hover {
+    display: block;
+    background-color: #ECFF00;
+    height: 29px;
+    width: 360px;
+    margin-top: -24px;
+} */
+
+.project-name {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+/* .project-name {
+    position: relative;
+} */
+
+.project-name .image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+}
+
+.project-name:hover .image-container {
+    opacity: 0.5;
+}
+
+.image-container img {
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}

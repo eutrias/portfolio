@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: black;
+}
+
+h3 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 24px;
+    text-decoration: none;
+    color: #0500FF;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: black;
+    line-height: 40px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.video {
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    background-color: black;
+    /* background: url("../images/bereal_bueno.gif"); */
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    z-index: -1;
+}
+
+.bereal-teaser {
+    width: 100%;
+    height: 80vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    position: fixed;
+    z-index: 100;
+}
+
+.navbar img {
+    width: 48px;
+}
+
+.logo {
+    display: flex;
+    background-color: #ECFF00;
+    color: #0500FF;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+    transition: 0.5s;
+}
+
+.logo a {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: 32px;
+    text-decoration: none;
+    color: #0500FF;
+    transition: 0.5s;
+}
+
+.logo:hover {
+    background-color: #0500FF;
+}
+
+.logo:hover a {
+    color: #ECFF00;
+}
+
+.column-1 {
+    position: relative;
+    z-index: 1;
+    /* background-color: white; */
+    width: 95vw;
+    height: 100vh;
+}
+
+.subtitles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.subtitles h3 {
+    margin: 0;
+}
+
+.column-1 h3 {
+    margin-left: 192px;
+    margin-top: 720px;
+}
+
+.column-1 h2 {
+    width: 685px;
+    margin-top: 36px;
+    margin-left: 192px;
+    line-height: 120%;
+}
+
+.column-1 p {
+    margin-left: 192px;
+    margin-top: 36px;
+    width: 80%;
+}
+
+.data {
+    /* margin-left: 192px;
+    margin-top: 36px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 36px;
+}
+
+.users {
+    margin-left: 168px;
+}
+
+.people-data {
+    margin-top: 124px;
+    margin-left: 112px;
+}
+
+.text-data {
+    display: flex;
+    margin-top: 32px;
+    margin-left: 104px;
+    width: 720px;
+    height: 96px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-data h4 {
+    text-align: center;
+}
+
+.moodboard {
+    margin-top: 72px;
+    width: 105vw;
+    z-index: 10;
+}
+
+.screens {
+    margin-top: 72px;
+    width: 105vw;
+    z-index: 10;
+}
+
+.medium {
+    margin-top: 72px;
+    margin-top: 36px;
+    margin-left: 128px;
+    background-color: #ECFF00;
+}
+
+.medium a {
+    display: block;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: 16px;
+    text-decoration: none;
+    color: #0500FF;
+    transition: 0.3s;
+}
+
+.medium:hover a {
+    background-color: #0500FF;
+    color: #ECFF00;
+}
+
+.footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-grow: 1;
+    height: 8vh;
+    margin-top: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-list li {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+    margin: 10px 64px 0 64px;
+}
+
+.footer-list a {
+    color: #0500FF;
+    text-decoration: none;
+    background-color: rgba(236, 255, 0, 0);
+    transition: 0.5s;
+}
+
+.footer-list a:hover {
+    background-color: rgba(236, 255, 0, 1);
+}
+
+.column-2 {
+    /* background-color: #F5F5F5; */
+    flex-grow: 1;
+    width: 5vw;
+    height: 100vh;
+    position: relative;
+}
